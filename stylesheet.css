@@ -31,6 +31,7 @@ body {
     opacity: 0;
 }
 
+/* Logo Styles */
 .logo {
     font-size: 30px; /* Increased font size */
     color: black; /* Set logo text color to black */
@@ -40,16 +41,9 @@ body {
     top: 20px; /* Adjust top position */
     left: 100px; /* Adjust left position */
 }
-/* Nearby menu button styles */
-.menu-button {
-    font-size: 20px; /* Adjust font size */
-     /* Set text color to black */
-    margin-right: 10px; /* Adjust margin */
-}
 
 /* Dropdown menu button */
 .dropbtn {
-   
     font-size: 24px;
     cursor: pointer;
     color: black; /* Set button text color to black */
@@ -66,12 +60,10 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
 
 /* Links in the dropdown */
 .dropdown-content a {
@@ -83,7 +75,7 @@ body {
 
 /* Change color of links on hover */
 .dropdown-content a:hover {
-     background-color: rgba(249, 249, 249, 0.9); /* Transparent white */
+    background-color: rgba(249, 249, 249, 0.9); /* Transparent white */
 }
 
 /* Show the dropdown menu on hover */
@@ -91,6 +83,7 @@ body {
     display: block;
 }
 
+/* Navbar Styles */
 .navbar {
     font-size: 25px;
     color: black; /* Set menu button color to black */
@@ -99,11 +92,18 @@ body {
     margin-left: 35px;
     transition: 0.3s;
 }
-.dropdown-content a:hover {
-    color: #00008B; /* Dark blue color */
-    font-weight: bold; /* Make the text bold */
-}
 
+/* Animation Keyframes */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Home Section Styles */
 .home {
@@ -118,10 +118,12 @@ body {
     padding: 70px 10% 0;
 }
 
+/* Spacer Styles */
 .spacer {
     height: 20px; /* Adjust height as needed */
 }
 
+/* Home Content Styles */
 .home-content {
     display: flex;
     justify-content: space-between;
@@ -130,21 +132,19 @@ body {
     animation: slideIn 1.5s ease forwards; /* Animation for home content */
 }
 
+/* Text Content Styles */
 .text-content {
     color: #000000; /* Set text color to black */
     font-size: 28px;
     font-family: "Harlow Solid Italic", sans-serif; /* Change font family */
 }
 
-/* Set color of "RAGAVI V" and "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE" to dark blue */
+/* Blue Text Styles */
 .blue-text {
     color: #00008B; /* Dark blue color */
 }
 
-.red-text {
-    color: red; /* Set text color to red */
-}
-
+/* Explore CV Button Styles */
 .explore-cv-button {
     font-size: 24px; /* Increase font size */
     color: white; /* Set text color to white */
@@ -157,20 +157,14 @@ body {
     transition: background-color 0.3s; /* Add transition */
 }
 
+/* Explore CV Button Hover Styles */
 .explore-cv-button:hover {
     background-color: darkred; /* Change button background color on hover */
 }
 
-/* Social Icons */
+/* Social Icons Styles */
 .social-icons {
     margin-top: 20px;
-}
-.social-icons a {
-    color: #000000; /* Change icon color to black */
-    font-size: 30px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-weight: bold; /* Make the text bold */
 }
 
 .social-icons a {
@@ -182,41 +176,50 @@ body {
     transition: color 0.3s; /* Add transition for smooth color change */
 }
 
-/* Instagram hover color */
+/* Instagram Hover Styles */
 .social-icons a.instagram:hover {
     color: #bc2a8d; /* Original Instagram color */
 }
 
-/* WhatsApp hover color */
+/* WhatsApp Hover Styles */
 .social-icons a.whatsapp:hover {
     color: #25D366; /* WhatsApp green color */
 }
 
-/* LinkedIn hover color */
+/* LinkedIn Hover Styles */
 .social-icons a.linkedin:hover {
     color: #0077b5; /* LinkedIn dark blue color */
 }
 
-/* GitHub hover color */
+/* GitHub Hover Styles */
 .social-icons a.github:hover {
     color: #000000; /* GitHub black color */
 }
-
-
 
 /* Photo Container Styles */
 .photo-container {
     width: 250px; /* Adjust width as needed */
     height: auto; /* Set height to auto to maintain aspect ratio */
-    margin-left: auto; /* Push the container to the right */
+    margin-left: 50px; /* Push the container to the right */
+    margin-top: -180px;
 }
 
-.profile-photo {
-    width: 250%; /* Make the image fill the container */
-    height: auto; /* Set height to auto to maintain aspect ratio */
-    object-fit: cover; /* Maintain aspect ratio and fill the container */
-    border-radius: 0; /* Remove border radius */
+/* Circle Frame Styles */
+.circle-frame {
+    width: 400px; /* Set width of the circle frame */
+    height: 400px; /* Set height of the circle frame */
+    border-radius: 50%; /* Create a circular frame */
+    overflow: hidden; /* Hide overflow */
 }
+
+/* Profile Photo Styles */
+.profile-photo {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+
+/* Gmail Button Styles */
 .gmail-button {
     font-size: 24px; /* Increase font size */
     color: white; /* Set text color to white */
@@ -229,18 +232,7 @@ body {
     transition: background-color 0.3s; /* Add transition */
 }
 
+/* Gmail Button Hover Styles */
 .gmail-button:hover {
     background-color: darkred; /* Change button background color on hover */
-}
-
-/* Animation Keyframes */
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
