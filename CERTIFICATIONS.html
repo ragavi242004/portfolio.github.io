@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        body {
+            background: url('background_image.jpg') no-repeat;
+            background-size: cover;
+            font-size: 18px;
+        }
+        
+        .header {
+            
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 100;
+        }
+        
+        .certification-header {
+            color: #003366;
+            font-size: 45px;
+            margin-left: 30px;
+            margin-top: -180px;
+            position: center;
+            margin-left: 450px;
+            margin-bottom: -350px;
+            text-align:center;
+            opacity: 0;
+            animation: slideInHeading 0.5s ease forwards;
+        }
+        
+        .certification-container {
+            max-width: 800px;
+            margin: -5cm auto 0 auto; /* Adjust margin-top to move the boxes upwards by 5cm */
+            padding: 20px;
+            margin-right: 80px; /* Adjust this value to shift the boxes towards the left */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .certification-box {
+            border: 3px solid #003366; /* Dark blue color */
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 0.2cm; /* Move the boxes upwards by 3cm */
+            margin-left: 10px;
+            opacity: 0; /* Hide initially */
+            animation: slideInCertification 0.5s ease forwards; /* Add animation */
+        }
+                
+
+
+        .certification-title {
+            font-size: 25px;
+            text-align: center; 
+            color: black; /* Dark blue color */
+            margin-bottom: 5px;
+        }
+
+        .certification-details {
+            font-size: 24px;
+            color: #000; /* Black color */
+            text-align: center; 
+            margin-bottom: 5px;
+        }
+
+        .certification-link {
+            font-size: 24px;
+            color: #003366; /* Dark blue color */
+            text-decoration: underline;
+            text-align: center; 
+            cursor: pointer;
+        }
+
+        .certification-link:hover {
+            color: #000; /* Black color */
+        }
+
+        @keyframes slideInHeading {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInCertification {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="certification-header">CERTIFICATIONS</h1>
+        <div class="spacer"></div>
+       
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fas fa-bars"></i> <!-- Menu icon -->
+                </button>
+                <div class="dropdown-content">
+                    <a href="HOME.html">HOME</a>
+                    <a href="ABOUT.html">ABOUT</a>
+                       <a href="EDUCATION.html">EDUCATION</a>
+                       <a href="INTERNSHIP.html">INTERNSHIP</a>
+                       <a href="SKILLS.html">SKILLS</a>
+                       <a href="PROJECTS.html">PROJECTS</a>
+                       <a href="CERTIFICATIONS.html">CERTIFICATIONS</a>
+                       <a href="CONTACT.html">CONTACT</a>
+              
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <div class="certification-container">
+                <div class="certification-box" style="animation-delay: 0.5s;">
+                    <h3 class="certification-title">XEBIA</h3>
+                    <p class="certification-details">Advanced Python Programming Training</p>
+                    <p class="certification-link" onclick="openCertificationImage('xebiacertificate.jpeg')">View Certification</p>
+                </div>
+                <div class="certification-box" style="animation-delay: 1s;">
+                    <h3 class="certification-title">COURSERA</h3>
+                    <p class="certification-details">Python for Data Analysis: Pandas & NumPy</p>
+                    <p class="certification-link" onclick="openCertificationImage('python_for_data_analysis_numpyandpandas.jpeg')">View Certification</p>
+                </div>
+                <div class="certification-box" style="animation-delay: 1.5s;">
+                    <h3 class="certification-title">GREAT LEARNING</h3>
+                    <p class="certification-details">Front End Development - HTML</p>
+                    <p class="certification-link" onclick="openCertificationImage('frontenddevelopment-html.png')">View Certification</p>
+                </div>
+                <div class="certification-box" style="animation-delay: 2s;">
+                    <h3 class="certification-title">GREAT LEARNING</h3>
+                    <p class="certification-details">Front End Development - CSS</p>
+                    <p class="certification-link" onclick="openCertificationImage('frontenddevelopment_css.png')">View Certification</p>
+                </div>
+                <div class="certification-box" style="animation-delay: 2.5s;">
+                    <h3 class="certification-title">SCALAR</h3>
+                    <p class="certification-details">Java Course - Mastering the Fundamentals</p>
+                    <p class="certification-link" onclick="openCertificationImage('java course-mastering the fundamentals certificate.png')">View Certification</p>
+                </div>
+                <div class="certification-box" style="animation-delay: 3s;">
+                    <h3 class="certification-title">NPTEL</h3>
+                    <p class="certification-details">Cyber Security and Privacy</p>
+                    <p class="certification-link" onclick="openCertificationImage('nptelcertificate.pdf')">View Certification</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Link to your custom JavaScript file -->
+    <script src="script.js"></script>
+    <script>
+        function openCertificationImage(imageName) {
+            // Replace 'imageName' with the actual path or URL of the certification image
+            window.open(imageName);
+        }
+    </script>
+</body>
+</html>

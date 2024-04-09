@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        body {
+            
+            background-size: cover;
+            color: #000; /* Black color */
+            font-size: 18px; /* Set font size */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: left; /* Align items to the left */
+            align-items: center;
+            height: 100vh;
+        }
+        
+
+        .skills-text {
+            color: #003366; /* Dark blue color */
+            font-size: 40px;
+            margin-left: 170px; 
+            margin-bottom: 20px;
+        }
+
+        .box {
+            width: 800px;
+            padding: 30px;
+            border: 3px solid #003366; /* Dark blue color */
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 170px; 
+            margin-top: 10px; /* Adjust this value to move the box upwards */
+        }
+
+        .circle {
+            display: inline-block;
+            width: 118px; /* Adjust circle size */
+            height: 118px; /* Adjust circle size */
+            background-color: #003366; /* Dark blue color */
+            border-radius: 50%;
+            margin: 0px; /* Adjust spacing between circles */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle-fill {
+            position: absolute;
+            width: 0; /* Initial width set to 0 for animation */
+            height: 100%;
+            background-color:blue; /* Red color */
+            animation: fillAnimation 2s ease forwards;
+        }
+
+        @keyframes fillAnimation {
+            from { width: 0; }
+        }
+
+        .circle-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* White color */
+            font-size: 14px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .circle-text span {
+            font-weight: bold;
+            color: white; /* White color */
+        }
+
+        .box:last-child {
+            margin-bottom: 0; /* Remove margin from last box */
+        }
+
+        .sub-box {
+            width: calc(25% - 20px); /* Adjust box width */
+            padding: 10px;
+            border: 1px solid #003366; /* Dark blue color */
+            border-radius: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="spacer"></div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fas fa-bars"></i> <!-- Menu icon -->
+                </button>
+                <div class="dropdown-content">
+                    <a href="HOME.html">HOME</a>
+                    <a href="ABOUT.html">ABOUT</a>
+                       <a href="EDUCATION.html">EDUCATION</a>
+                       <a href="INTERNSHIP.html">INTERNSHIP</a>
+                       <a href="SKILLS.html">SKILLS</a>
+                       <a href="PROJECTS.html">PROJECTS</a>
+                       <a href="CERTIFICATIONS.html">CERTIFICATIONS</a>
+                       <a href="CONTACT.html">CONTACT</a>
+              
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <div class="container">
+                <h1 class="skills-text">SKILLS</h1>
+                <div class="box">
+                    <h2>PROFESSIONAL SKILLS</h2>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 70%;"></div>
+                        <div class="circle-text">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 50%;"></div>
+                        <div class="circle-text">
+                            <span>Data Science Libraries</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 50%;"></div>
+                        <div class="circle-text">
+                            <span>Machine learning algorithms</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 80%;"></div>
+                        <div class="circle-text">
+                            <span>Html</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 70%;"></div>
+                        <div class="circle-text">
+                            <span>Css</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 60%;"></div>
+                        <div class="circle-text">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>PERSONAL SKILLS</h2>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 70%;"></div>
+                        <div class="circle-text">
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 95%;"></div>
+                        <div class="circle-text">
+                            <span>Team Work</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 85%;"></div>
+                        <div class="circle-text">
+                            <span>Communication</span>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-fill" style="width: 95%;"></div>
+                        <div class="circle-text">
+                            <span>Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Link to your custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

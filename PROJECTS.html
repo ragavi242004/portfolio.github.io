@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        body {
+            
+            background-size: cover;
+            color: #000; /* Black color */
+            font-size: 18px; /* Set font size */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            
+        }
+
+        .project {
+            margin-top: 20px;
+            font-size: 45px;
+            margin-right: -250px;
+           
+        }
+
+        .project-title {
+            color: #000; /* Black color */
+            font-size: 25px;
+            margin-bottom: 20px; /* Added margin-bottom */
+            display: flex;
+            justify-content: space-between; /* Align button to the right */
+            align-items: center; /* Center-align vertically */
+            margin-right: -100px; /* Move project titles to the left */
+        }
+
+        .project-description {
+            display: none; /* Hide project descriptions by default */
+            margin-bottom: 0px;
+            font-size: 25px;
+            max-width: 700px;
+
+            margin-right: -100px;
+        }
+
+        .about-text {
+            color: #003366; /* Dark blue color */
+            font-size: 40px;
+            margin-top: -130px;
+            margin-right: -250px;
+            text-align: center; /* Center align the projects heading */
+        }
+
+        .view-button {
+            color: black; /* Dark blue color */
+            font-size: 24px;
+            cursor: pointer;
+            margin-right:25px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="spacer"></div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fas fa-bars"></i> <!-- Menu icon -->
+                </button>
+                <div class="dropdown-content">
+                    <a href="HOME.html">HOME</a>
+                    <a href="ABOUT.html">ABOUT</a>
+                    <a href="EDUCATION.html">EDUCATION</a>
+                    <a href="INTERNSHIP.html">INTERNSHIP</a>
+                    <a href="SKILLS.html">SKILLS</a>
+                    <a href="PROJECTS.html">PROJECTS</a>
+                    <a href="CERTIFICATIONS.html">CERTIFICATIONS</a>
+                    <a href="CONTACT.html">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <div class="container">
+                <h1 class="about-text">PROJECTS</h1>
+                <div class="project">
+                    <h3 class="project-title">Plant Disease Detection System <span class="view-button" onclick="toggleDescription(1)">&#9660;</span></h3>
+                    <p class="project-description">Using pre-trained models on labeled datasets of healthy and diseased plants. Integrated a user-friendly interface for image uploading and diagnosis.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">Fruit and Vegetable Classification <span class="view-button" onclick="toggleDescription(2)">&#9660;</span></h3>
+                    <p class="project-description">Completed a Data Science project for fruit and vegetable classification, successfully developing a model capable of identifying various produce types.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">Personal Profile Website <span class="view-button" onclick="toggleDescription(3)">&#9660;</span></h3>
+                    <p class="project-description">Created a personal portfolio website using HTML, CSS, and JavaScript. This platform showcases my skills and achievements in a dynamic and visually appealing manner.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">Plagiarism Checker <span class="view-button" onclick="toggleDescription(4)">&#9660;</span></h3>
+                    <p class="project-description">Created a tool that compares input text to a vast database, generating a detailed Plagiarism Report that highlights matching or similar phrases.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">Electricity Bill Management System <span class="view-button" onclick="toggleDescription(5)">&#9660;</span></h3>
+                    <p class="project-description">Using MySQL, this project automates electricity bill management for both individual and commercial customers, storing consumer records in the database.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleDescription(projectNum) {
+            var description = document.querySelectorAll(".project-description")[projectNum - 1];
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; /* Apply Times New Roman font */
+}
+
+/* Body Styles */
+body {
+    color: #000000; /* Set default text color to black */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-size: 18px;
+    font-family: "Vibur", sans-serif;
+    background-color: #010a01;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    animation: slideIn 1.5s ease forwards; /* Animation for header */
+    opacity: 0;
+}
+
+.logo {
+    font-size: 30px; /* Increased font size */
+    color: black; /* Set logo text color to black */
+    text-decoration: none;
+    font-weight: bold; /* Make the text bold */
+    position: absolute; /* Position the text absolutely */
+    top: 20px; /* Adjust top position */
+    left: 100px; /* Adjust left position */
+}
+/* Nearby menu button styles */
+.menu-button {
+    font-size: 20px; /* Adjust font size */
+     /* Set text color to black */
+    margin-right: 10px; /* Adjust margin */
+}
+
+/* Dropdown menu button */
+.dropbtn {
+   
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* Set button text color to black */
+    margin-right: 200px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links in the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+     background-color: rgba(249, 249, 249, 0.9); /* Transparent white */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar {
+    font-size: 25px;
+    color: black; /* Set menu button color to black */
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.dropdown-content a:hover {
+    color: #00008B; /* Dark blue color */
+    font-weight: bold; /* Make the text bold */
+}
+
+
+/* Home Section Styles */
+.home {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background: url('128.jpg') no-repeat;
+    background-size: cover;
+    background-position: right center; /* Adjusted background position */
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.spacer {
+    height: 20px; /* Adjust height as needed */
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    animation: slideIn 1.5s ease forwards; /* Animation for home content */
+}
+
+.text-content {
+    color: #000000; /* Set text color to black */
+    font-size: 28px;
+    font-family: "Harlow Solid Italic", sans-serif; /* Change font family */
+}
+
+/* Set color of "RAGAVI V" and "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE" to dark blue */
+.blue-text {
+    color: #00008B; /* Dark blue color */
+}
+
+.red-text {
+    color: red; /* Set text color to red */
+}
+
+.explore-cv-button {
+    font-size: 24px; /* Increase font size */
+    color: white; /* Set text color to white */
+    background-color: red; /* Set button background color to red */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor */
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s; /* Add transition */
+}
+
+.explore-cv-button:hover {
+    background-color: darkred; /* Change button background color on hover */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #000000; /* Change icon color to black */
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold; /* Make the text bold */
+}
+
+.social-icons a {
+    color: #000000; /* Change icon color to black */
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+/* Instagram hover color */
+.social-icons a.instagram:hover {
+    color: #bc2a8d; /* Original Instagram color */
+}
+
+/* WhatsApp hover color */
+.social-icons a.whatsapp:hover {
+    color: #25D366; /* WhatsApp green color */
+}
+
+/* LinkedIn hover color */
+.social-icons a.linkedin:hover {
+    color: #0077b5; /* LinkedIn dark blue color */
+}
+
+/* GitHub hover color */
+.social-icons a.github:hover {
+    color: #000000; /* GitHub black color */
+}
+
+
+
+/* Photo Container Styles */
+.photo-container {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    margin-left: auto; /* Push the container to the right */
+}
+
+.profile-photo {
+    width: 250%; /* Make the image fill the container */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    border-radius: 0; /* Remove border radius */
+}
+.gmail-button {
+    font-size: 24px; /* Increase font size */
+    color: white; /* Set text color to white */
+    background-color: red; /* Set button background color to red */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor */
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s; /* Add transition */
+}
+
+.gmail-button:hover {
+    background-color: darkred; /* Change button background color on hover */
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
